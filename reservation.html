@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+    <header class="main_header">
+      <a class="main_header_logo">
+        <img src="img/logo.jpg" width="140" height="70" alt="Логотип">
+      </a>
+      <nav class="main_header_navigation">
+        <ul>
+          <li><a href="#">Информация</a></li>
+          <li><a href="#">Фото и видео</a></li>
+          <li><a href="#">Карта штата</a></li>
+          <li><a href="#">Гостиницы</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+
+      <h1 class="visually_hidden">Бронь отеля в Седоне</h1>
+
+      <section class="hotel_search">
+        <h2 class="visually_hidden">Поиск отеля</h2>
+
+        <div class="hotel_search_infrastructure">
+          <h3>Инфраструктура:</h3>
+          <ul>
+            <li>
+              <a class="mark_button" href="#"></a>
+              <p>Бассейн</p>
+            </li>
+            <li>
+              <a class="mark_button" href="#"></a>
+              <p>Парковка</p>
+            </li>
+            <li>
+              <a class="mark_button" href="#"></a>
+              <p>WI-FI</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hotel_search_housing">
+          <h3>Тип жилья:</h3>
+          <ul>
+            <li>
+              <a class="mark_button" href="#"></a>
+              <p>Гостиница</p>
+            </li>
+            <li>
+              <a class="mark_button" href="#"></a>
+              <p>Мотель</p>
+            </li>
+            <li>
+              <a class="mark_button" href="#"></a>
+              <p>Апартаменты</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <!-- форма -->
+      </section>
+
+      <section class="sorting">
+        <h2 class="visually_hidden">Сортировка отелей</h2>
+        <!--<p>Найдено: 3</p>
+        Это не меняющийся текст? -->
+        <p>Сортировка:</p>
+        <ul class="sorting_list">
+          <li><a href="#">по цене</a></li>
+          <li><a href="#">по типу</a></li>
+          <li><a href="#">по рейтингу</a></li>
+        </ul>
+        <ul class="sorting_button">
+          <li><a class="sorting_button_up" href="#">
+            <img src="img/button_up.jpg" weight="10" height="10" alt="По возрастанию">
+          </a></li>
+          <li><a class="sorting_button_down" href="#">
+            <img src="img/button_down.jpg" weight="10" height="10" alt="По убыванию">
+          </a></li>
+        </ul>
+      </section>
+
+      <section class="hotel hotel_amara">
+        <h2 class="visually_hidden">Отель Amara Resort & SPA</h2>
+
+        <div class="hotel_photo">
+          <img src="img/amara.jpg" weight="135" height="90" alt="Amara">
+        </div>
+
+        <h3>Amara Resort & SPA</h3>
+        <table class="hotel_table">
+          <tr>
+            <td class="hotel_info">Гостиница</td>
+            <td class="hotel_info">От 4000 р.</td>
+          </tr>
+          <tr>
+            <td><a class="hotel_button" href="#">Подробнее</a></td>
+            <td><a class="hotel_button" href="#">Забронировать</a></td>
+          </tr>
+        </table>
+
+        <h4 class="visually_hidden">Количество звёзд</h4>
+        <ul class="hotel_stars">
+          <li><img src="img/star.jpg" weight="15" height="15" alt="Star"></li>
+          <li><img src="img/star.jpg" weight="15" height="15" alt="Star"></li>
+          <li><img src="img/star.jpg" weight="15" height="15" alt="Star"></li>
+          <li><img src="img/star.jpg" weight="15" height="15" alt="Star"></li>
+        </ul>
+
+        <p class="hotel_rating">Рейтинг: 8,5</p>
+      </section>
+
+      <section class="hotel hotel_desert">
+        <h2 class="visually_hidden">Отель Desert Quail Inn</h2>
+
+        <div class="hotel_photo">
+          <img src="img/desert.jpg" weight="135" height="90" alt="Desert">
+        </div>
+
+        <h3>Desert Quail Inn</h3>
+        <table class="hotel_table">
+          <tr>
+            <td class="hotel_info">Мотель</td>
+            <td class="hotel_info">От 3000 р.</td>
+          </tr>
+          <tr>
+            <td><a class="hotel_button" href="#">Подробнее</a></td>
+            <td><a class="hotel_button" href="#">Забронировать</a></td>
+          </tr>
+        </table>
+
+        <ul class="hotel_stars">
+          <li><img src="img/star.jpg" weight="15" height="15" alt="Star"></li>
+          <li><img src="img/star.jpg" weight="15" height="15" alt="Star"></li>
+          <li><img src="img/star.jpg" weight="15" height="15" alt="Star"></li>
+        </ul>
+
+        <p class="hotel_rating">Рейтинг: 8,9</p>
+      </section>
+
+      <section class="hotel hotel_villas">
+        <h2 class="visually_hidden">Отель Villas At Poco Diablo</h2>
+
+        <div class="hotel_photo">
+          <img src="img/villas.jpg" weight="135" height="90" alt="Villas">
+        </div>
+
+        <h3>Villas At Poco Diablo</h3>
+        <table class="hotel_table">
+          <tr>
+            <td class="hotel_info">Апартаменты</td>
+            <td class="hotel_info">От 2000 р.</td>
+          </tr>
+          <tr>
+            <td><a class="hotel_button" href="#">Подробнее</a></td>
+            <td><a class="hotel_button" href="#">Забронировать</a></td>
+          </tr>
+        </table>
+
+        <ul class="hotel_stars">
+          <li><img src="img/star.jpg" weight="15" height="15" alt="Star"></li>
+          <li><img src="img/star.jpg" weight="15" height="15" alt="Star"></li>
+        </ul>
+
+        <p class="hotel_rating">Рейтинг: 9,2</p>
+      </section>
+    </main>
+
+    <footer class="main_footer">
+      <b>#visitsedona</b>
+      <ul>
+        <li><a class="social_button" href="#">Твиттер</a></li>
+        <li><a class="social_button" href="#">Фейсбук</a></li>
+        <li><a class="social_button" href="#">Ютуб</a></li>
+      </ul>
+      <div class="main_footer_copyright">
+        <b>website by</b>
+        <a class="social_network_academy" href="#">
+          <img scr="img/htmlacademy.jpg" width="115" height="40" alt="HTML Academy">
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
