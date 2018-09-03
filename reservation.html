@@ -18,6 +18,7 @@
         </ul>
       </nav>
     </header>
+
     <main class="container">
 
       <h1 class="visually_hidden">Бронь отеля в Седоне</h1>
@@ -25,52 +26,49 @@
       <section class="hotel_search">
         <h2 class="visually_hidden">Поиск отеля</h2>
 
-        <div class="hotel_search_infrastructure">
-          <h3>Инфраструктура:</h3>
-          <form action="/echo" method="post">
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <div class="hotel_search_infrastructure">
+            <h3>Инфраструктура:</h3>
             <ul>
               <li>
                 <input type="checkbox" class="visually_hidden" name="pool" id="pool-checkbox" checked>
-                <span class="checkbox-indicator"></span>
                 <label for ="pool-checkbox">Бассейн</label>
               </li>
               <li>
                 <input type="checkbox" class="visually_hidden" name="parking" id="parking-checkbox">
-                <span class="checkbox-indicator"></span>
                 <label for ="parking-checkbox">Парковка</label>
               </li>
               <li>
                 <input type="checkbox" class="visually_hidden" name="wifi" id="wifi-checkbox">
-                <span class="checkbox-indicator"></span>
                 <label for ="wifi-checkbox">WI-FI</label>
               </li>
             </ul>
-          </form>
-        </div>
+          </div>
 
-        <div class="hotel_search_housing">
-          <h3>Тип жилья:</h3>
-          <form action="/echo" method="post">
+          <div class="hotel_search_housing">
+            <h3>Тип жилья:</h3>
             <ul>
               <li>
                 <input type="checkbox" class="visually_hidden" name="hotel" id="hotel-checkbox" checked>
-                <span class="checkbox-indicator"></span>
                 <label for ="hotel-checkbox">Гостиница</label>
               </li>
               <li>
                 <input type="checkbox" class="visually_hidden" name="parking" id="motel-checkbox" checked>
-                <span class="checkbox-indicator"></span>
                 <label for ="motel-checkbox">Мотель</label>
               </li>
               <li>
                 <input type="checkbox" class="visually_hidden" name="apartment" id="apartment-checkbox" checked>
-                <span class="checkbox-indicator"></span>
                 <label for ="apartment-checkbox">Апартаменты</label>
               </li>
             </ul>
-          </form>
-        </div>
-      <!-- форма -->
+          </div>
+
+          <div class="hotel_search_prise">
+            <h3>Стоимость в сутки (р):</h3>
+            <div class="hotel_search_price_filter"></div>
+          </div>
+          <button class="button" type="submit">Показать</button>
+        </form>
       </section>
 
       <section class="sorting">
@@ -177,7 +175,7 @@
       </ul>
       <div class="main_footer_copyright">
         <b>website by</b>
-        <a class="social_network_academy" href="https://htmlacademy.ru">
+        <a class="social_network_academy" href="https://htmlacademy.ru/intensive/htmlcss">
           <img src="img/logo-htmlacademy.svg" width="115" height="40" alt="HTML Academy">
         </a>
       </div>
