@@ -102,8 +102,41 @@
         <p>Заинтересовались?</p>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <a class="reservation_button"></a>
+
         <!-- форма -->
-        <div class="map"></div>
+        <form action="/echo" method="post">
+          <p>
+            <label class="reservation_form">Дата заезда:
+              <input type="text" name="arrival-date" placeholder="24 апреля 2017">
+            </label>
+          </p>
+
+          <p>
+            <label class="reservation_form">Дата выезда:
+              <input type="text" name="departure-date" placeholder="4 июля 2017">
+            </label>
+          </p>
+
+          <p>
+            <label for="number-of-adults-field">Взрослые:</label>
+            <button type="button" name="button-less">-</button>
+            <input type="text" name="account" id="number-of-adults-field" placeholder="2">
+            <button type="button" name="button-more">+</button>
+          </p>
+
+          <p>
+            <label for="number-of-children-field">Дети:</label>
+            <button type="button" name="button-less">-</button>
+            <input type="text" name="account" id="number-of-children-field" placeholder="0">
+            <button type="button" name="button-more">+</button>
+          </p>
+
+          <button class="button" type="submit">Найти</button>
+        </form>
+
+        <div class="map">
+          <img src="img/map.jpg" width="768" alt="Седона, штат Аризона, США. Широта: 34°52′11″ с.ш. Долгота: 111°45′39″ з.д.">
+        </div>
       </section>
 </main>
 
@@ -116,7 +149,7 @@
       </ul>
       <div class="main_footer_copyright">
         <b>website by</b>
-        <a class="social_network_academy" href="#">
+        <a class="social_network_academy" href="https://htmlacademy.ru">
           <img src="img/logo-htmlacademy.svg" width="115" height="40" alt="HTML Academy">
         </a>
       </div>
