@@ -20,7 +20,6 @@ a {
   font-weight: bold;
   line-height: 26px;
   color: #000000;
-
   background-color: #ffffff;
 }
 
@@ -46,20 +45,26 @@ a {
   color: #dadada;
 }
 
-.main_promo {
+.main_intro {
   font-size: 14px;
   line-height: 26px;
   color: #000000;
-
   text-align: center;
+  background-color: #ffffff;
+}
 
+.main_intro_image {
   background-color: #ffffff;
   background-image: url("../img/background-photo.jpg");
   background-position: top center;
   background-repeat: no-repeat;
 }
 
-.main_promo_title {
+.main_intro_text {
+  background-color: #ffffff;
+}
+
+.main_intro_title {
   font-size: 21px;
   font-weight: bold;
 }
@@ -101,7 +106,7 @@ a {
 
 .reservation_title {
   font-size: 30px;
-  font-family: bold;
+  font-weight: bold;
   line-height: 36px;
   text-align: center;
 }
@@ -111,48 +116,47 @@ a {
   text-align: center;
 }
 
-.button {
+.reservation_button {
   font-size: 21px;
   font-weight: bold;
   line-height: 26px;
   color: #ffffff;
-
   text-align: center;
   vertical-align: middle;
   text-transform: uppercase;
-
-  background-color: #81b3d2;
   border: none;
 }
 
-.button:hover,
-.button:focus {
-  background-color: #669ec0;
-}
-
-.button:active {
-  background-color: #5496bd;
-  color: #91b7d1;
-}
-
-.reservation_button{
+.reservation_button_brown{
   background-color: #766357;
 }
 
-.reservation_button:hover
+.reservation_button_brown:hover
 /*.reservation_button:focus*/ {
   background-color: #604e43;
 }
 
-.reservation_button:active {
+.reservation_button_brown:active {
   background-color: #503e33;
   color: #928a85;
 }
-/*не опасно ли так переопределять? может лучше сделать два отдельных класса для фонов кнопок?*/
+
+.reservation_button_blue {
+  background-color: #81b3d2;
+}
+
+.reservation_button_blue:hover
+/*.reservation_button_brown:focus*/ {
+  background-color: #669ec0;
+}
+
+.reservation_button_blue:active {
+  background-color: #5496bd;
+  color: #91b7d1;
+}
 
 .reservation_form {
-  border: 2px solid #f0f0f0;/*здесь должна быть тень*/
-  border-top: none;
+  box-shadow: 0 0px 15px -5px #000000;
 }
 
 .reservation_form label,
@@ -167,6 +171,10 @@ a {
 .reservation_form button[type="button"] {
   background-color: #f2f2f2;
   border: none;
+}
+
+.reservation_form input {
+  border: 1px solid transparent;
 }
 
 .reservation_form button[type="button"] {
@@ -185,7 +193,7 @@ a {
 .reservation_form input:focus{
   background-color: #ffffff;
   border-color: #e5e5e5;
-} /*не знаю, как заменить рамку в фокусе с автоматической на такого цвета*/
+} /*всё равно цвет остается по умолчанию*/
 
 .reservation_form button[type="button"]:active {
   color: #81b3d2;
@@ -197,11 +205,10 @@ a {
 
 .hotel_search {
   color: #ffffff;
-
-   background-color: #81b3d3;
-   background-image: url("../img/filter-background.jpg");
-   background-position: top center;
-   background-repeat: no-repeat;
+  background-color: #81b3d3;
+  background-image: url("../img/filter-background.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
  }
 
  .hotel_search h3 {
@@ -240,6 +247,10 @@ a {
    line-height: 18px;
  }
 
+ .sorting span {
+   color: #000000;
+ }
+
  .sorting_result {
    font-size: 21px;
    font-weight: bold;
@@ -250,25 +261,33 @@ a {
    list-style: none;
  }
 
- .sorting_active {
-   pointer-events: none; /*нужно ли*/
-   color: #bad3e5;
- }
-
- .sorting_not_active {
+ .sorting_list a {
    color: #dadada;
-   text-decoration: underline dashed #81b3d2;
+   border-bottom: 1px dotted #81b3d2;
  }
 
-.sorting_not_active:hover {
-  color: #81b3d2;
-}
+ .sorting_list a:hover {
+   color: #81b3d2;
+ }
 
-.sorting_not_active:active {
-  color: #000000;
-  text-decoration: none;
+ .sorting_list a:active {
+   color: #000000;
+   border-bottom: none;
+ }
+
+ .sorting_list a.active {
+   /*pointer-events: none;*/
+   color: #bad3e5;
+   border-bottom: none;
+ }
+
+.sorting_list a.active,
+.sorting_list a.active:hover,
+.sorting_list a.active:active {
+  /*pointer-events: none;*/
+  color: #bad3e5;
+  border-bottom: none;
 }
-/*наверно, не через классы это надо было делать*/
 
 .hotel_title {
   font-size: 21px;
@@ -331,12 +350,12 @@ a {
   line-height: 26px;
 }
 
-.main_footer_social {
-  text-align: center;
+.main_footer ul {
+  list-style: none;
 }
 
-.main_footer_social ul {
-  list-style: none;
+.main_footer_social {
+  text-align: center;
 }
 
 .social_button {

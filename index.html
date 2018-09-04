@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -24,10 +24,16 @@
 
     <main class="container">
       <h1 class="visually_hidden">Седона</h1>
-      <section class="main_promo">
-        <p class="main_promo_title">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
-        <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+
+      <section class="main_intro">
+        <div class="main_intro_image">
+          <img src="img/intro-welcome.svg" width="500" alt="Добро пожаловать">
+        </div>
+        <div class="main_intro_text">
+          <p class="main_intro_title">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+          <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       </section>
+
       <section class="reasons reasons_main">
         <!--<h2 class="visually_hidden">Причины приехать</h2>-->
         <div class="reasons_photo">
@@ -101,7 +107,7 @@
       <section class="reservation">
         <p class="reservation_title">Заинтересовались?</p>
         <p class="reservation_info">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a class="button reservation_button" href="reservation.html">Поиск гостиницы в Седоне</a>
+        <a class="reservation_button reservation_button_brown" href="reservation.html">Поиск гостиницы в Седоне</a>
         <form class="reservation_form" action="https://echo.htmlacademy.ru" method="post">
           <p>
             <label for="arrival-date-field">Дата заезда:</label>
@@ -129,7 +135,7 @@
             <input class="reservation_form_amount" type="text" name="account" id="number-of-children-field" placeholder="0">
             <button class="reservation_form_amount" type="button" name="button-more">+</button>
           </p>
-          <button class="button reservation_form_button" type="submit">Найти</button>
+          <button class="reservation_button reservation_button_blue" type="submit">Найти</button>
         </form>
 
         <div class="map">
@@ -140,13 +146,11 @@
 
     <footer class="main_footer">
       <b class="main_footer_hashtag">#visitsedona</b>
-      <div class="main_footer_social">
-        <ul>
+      <ul class="main_footer_social">
           <li><a class="social_button" href="#">Твиттер</a></li>
           <li><a class="social_button" href="#">Фейсбук</a></li>
           <li><a class="social_button" href="#">Ютуб</a></li>
-        </ul>
-      </div>
+      </ul>
       <div class="main_footer_copyright">
         <b>website by</b>
         <a class="social_network_academy" href="https://htmlacademy.ru/intensive/htmlcss">
