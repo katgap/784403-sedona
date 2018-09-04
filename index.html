@@ -3,14 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main_header">
-      <a class="main_header_logo">
-        <img src="img/logo-sedona.svg" width="140" height="70" alt="Логотип">
-      </a>
       <nav class="main_header_navigation">
-        <ul>
+        <a class="main_header_logo">
+          <img src="img/logo-sedona.svg" width="140" height="70" alt="Логотип">
+        </a>
+        <ul class="main_header_site_navigation">
           <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и видео</a></li>
           <li><a href="#">Карта штата</a></li>
@@ -20,17 +23,14 @@
     </header>
 
     <main class="container">
-
       <h1 class="visually_hidden">Седона</h1>
-
-      <section class="promo">
-        <p>Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+      <section class="main_promo">
+        <p class="main_promo_title">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       </section>
-
-      <section class="reasons">
+      <section class="reasons reasons_main">
         <!--<h2 class="visually_hidden">Причины приехать</h2>-->
-        <div>
+        <div class="reasons_photo">
           <img src="img/city.jpg" width="510" height="255" alt="Город">
         </div>
         <ul class="reasons_list">
@@ -63,7 +63,7 @@
         </ul>
       </section>
 
-      <section class="reasons">
+      <section class="reasons reasons_main">
         <!--<h2 class="visually_hidden">Причины приехать</h2>-->
         <div>
           <img src="img/bridge.jpg" width="510" height="255" alt="Мост дьявола">
@@ -77,7 +77,7 @@
         </ul>
       </section>
 
-      <section class="reasons">
+      <section class="reasons reasons_other">
         <!--<h2 class="visually_hidden">Причины приехать</h2>-->
         <ul class="reasons_list">
           <li class="reasons_item reasons_item_black">
@@ -99,19 +99,19 @@
       </section>
 
       <section class="reservation">
-        <p>Заинтересовались?</p>
-        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a class="reservation_button" href="reservation.html">Поиск гостиницы в Седоне</a>
-        <form class="" action="https://echo.htmlacademy.ru" method="post">
+        <p class="reservation_title">Заинтересовались?</p>
+        <p class="reservation_info">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <a class="button reservation_button" href="reservation.html">Поиск гостиницы в Седоне</a>
+        <form class="reservation_form" action="https://echo.htmlacademy.ru" method="post">
           <p>
-            <label class="reservation_form" for="arrival-date-field">Дата заезда:</label>
+            <label for="arrival-date-field">Дата заезда:</label>
             <input type="text" name="arrival-date" id="arrival-date-field" placeholder="24 апреля 2017">
             <button type="button" name="button-date">
               <img src="img/calendar.svg" width="20" height="20" alt="Выбор даты">
             </button>
           </p>
           <p>
-            <label class="reservation_form" for="departure-date-field">Дата выезда:</label>
+            <label for="departure-date-field">Дата выезда:</label>
             <input type="text" name="departure-date" id="departure-date-field" placeholder="4 июля 2017">
             <button type="button" name="button-date">
               <img src="img/calendar.svg" width="20" height="20" alt="Выбор даты">
@@ -119,17 +119,17 @@
           </p>
           <p>
             <label for="number-of-adults-field">Взрослые:</label>
-            <button type="button" name="button-less">-</button>
-            <input type="text" name="account" id="number-of-adults-field" placeholder="2">
-            <button type="button" name="button-more">+</button>
+            <button class="reservation_form_amount" type="button" name="button-less">-</button>
+            <input class="reservation_form_amount" type="text" name="account" id="number-of-adults-field" placeholder="2">
+            <button class="reservation_form_amount" type="button" name="button-more">+</button>
           </p>
           <p>
             <label for="number-of-children-field">Дети:</label>
-            <button type="button" name="button-less">-</button>
-            <input type="text" name="account" id="number-of-children-field" placeholder="0">
-            <button type="button" name="button-more">+</button>
+            <button class="reservation_form_amount" type="button" name="button-less">-</button>
+            <input class="reservation_form_amount" type="text" name="account" id="number-of-children-field" placeholder="0">
+            <button class="reservation_form_amount" type="button" name="button-more">+</button>
           </p>
-          <button class="button" type="submit">Найти</button>
+          <button class="button reservation_form_button" type="submit">Найти</button>
         </form>
 
         <div class="map">
@@ -139,12 +139,14 @@
     </main>
 
     <footer class="main_footer">
-      <b>#visitsedona</b>
-      <ul>
-        <li><a class="social_button" href="#">Твиттер</a></li>
-        <li><a class="social_button" href="#">Фейсбук</a></li>
-        <li><a class="social_button" href="#">Ютуб</a></li>
-      </ul>
+      <b class="main_footer_hashtag">#visitsedona</b>
+      <div class="main_footer_social">
+        <ul>
+          <li><a class="social_button" href="#">Твиттер</a></li>
+          <li><a class="social_button" href="#">Фейсбук</a></li>
+          <li><a class="social_button" href="#">Ютуб</a></li>
+        </ul>
+      </div>
       <div class="main_footer_copyright">
         <b>website by</b>
         <a class="social_network_academy" href="https://htmlacademy.ru/intensive/htmlcss">

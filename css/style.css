@@ -1,0 +1,344 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+  text-transform: uppercase;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main_header_navigation {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 26px;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.main_header_site_navigation {
+  list-style:none;
+}
+
+.main_header_site_navigation a {
+  color: #000000;
+}
+
+.main_header_site_navigation .disabled {
+  pointer-events: none;
+  color: #766357;
+}
+
+.main_header_site_navigation a:hover
+/*.main_header_site_navigation a:focus*/ {
+  color: #81b3d2
+}
+
+.main_header_site_navigation a:active {
+  color: #dadada;
+}
+
+.main_promo {
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+
+  text-align: center;
+
+  background-color: #ffffff;
+  background-image: url("../img/background-photo.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.main_promo_title {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.reasons_main {
+  background-color: #81b3d2;
+}
+
+.reasons_other {
+  background-color: #eeeeee;
+}
+
+.reasons_list {
+  list-style: none;
+}
+
+.reasons_item,
+.recommendations_item {
+  text-align: center;
+}
+
+.reasons_item h3,
+.recommendations_list h3 {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.reasons_item_white {
+  color: #ffffff;
+}
+
+.reasons_item_black {
+  color: #000000;
+}
+
+.recommendations_list {
+  list-style: none;
+}
+
+.reservation_title {
+  font-size: 30px;
+  font-family: bold;
+  line-height: 36px;
+  text-align: center;
+}
+
+.reservation_info {
+  line-height: 24px;
+  text-align: center;
+}
+
+.button {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+  color: #ffffff;
+
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #81b3d2;
+  border: none;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #669ec0;
+}
+
+.button:active {
+  background-color: #5496bd;
+  color: #91b7d1;
+}
+
+.reservation_button{
+  background-color: #766357;
+}
+
+.reservation_button:hover
+/*.reservation_button:focus*/ {
+  background-color: #604e43;
+}
+
+.reservation_button:active {
+  background-color: #503e33;
+  color: #928a85;
+}
+/*не опасно ли так переопределять? может лучше сделать два отдельных класса для фонов кнопок?*/
+
+.reservation_form {
+  border: 2px solid #f0f0f0;/*здесь должна быть тень*/
+  border-top: none;
+}
+
+.reservation_form label,
+.reservation_form input {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.reservation_form input,
+.reservation_form button[type="button"] {
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.reservation_form button[type="button"] {
+  color: #a9a9a9;
+}
+
+.reservation_form input:hover{
+  background-color: #ebebeb;
+}
+
+.reservation_form button[type="button"]:hover
+/*.reservation_form button[type="button"]:focus*/ {
+  color: #000000;
+}
+
+.reservation_form input:focus{
+  background-color: #ffffff;
+  border-color: #e5e5e5;
+} /*не знаю, как заменить рамку в фокусе с автоматической на такого цвета*/
+
+.reservation_form button[type="button"]:active {
+  color: #81b3d2;
+}
+
+.reservation_form_amount {
+  text-align: center;
+}
+
+.hotel_search {
+  color: #ffffff;
+
+   background-color: #81b3d3;
+   background-image: url("../img/filter-background.jpg");
+   background-position: top center;
+   background-repeat: no-repeat;
+ }
+
+ .hotel_search h3 {
+   font-size: 16px;
+   font-weight: bold;
+ }
+
+ .hotel_search_infrastructure ul,
+ .hotel_search_housing ul {
+   list-style: none;
+ }
+
+ .hotel_button {
+   font-size: 14px;
+   font-weight: normal;
+   line-height: 21px;
+   color: #ffffff;
+   text-align: center;
+   vertical-align: middle;
+   text-transform: uppercase;
+   border: none;
+ }
+
+ .hotel_search_button {
+   background-color : rgba(0, 0, 0, 0);
+   border: 2px solid #ffffff;
+ }
+
+ .hotel_search_button:hover{
+   color: #000000;
+   background-color: #ffffff;
+ }
+
+ .sorting {
+   font-size: 12px;
+   line-height: 18px;
+ }
+
+ .sorting_result {
+   font-size: 21px;
+   font-weight: bold;
+   line-height: 26px;
+ }
+
+ .sorting ul {
+   list-style: none;
+ }
+
+ .sorting_active {
+   pointer-events: none; /*нужно ли*/
+   color: #bad3e5;
+ }
+
+ .sorting_not_active {
+   color: #dadada;
+   text-decoration: underline dashed #81b3d2;
+ }
+
+.sorting_not_active:hover {
+  color: #81b3d2;
+}
+
+.sorting_not_active:active {
+  color: #000000;
+  text-decoration: none;
+}
+/*наверно, не через классы это надо было делать*/
+
+.hotel_title {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+  color: #000000;
+}
+
+.hotel_title:hover {
+  color: #81b3d2;
+}
+
+.hotel_title:active {
+  color: #cacaca;
+}
+
+.hotel_button_details{
+  background-color: #81b3d2;
+}
+
+.hotel_button_details:hover{
+  background-color: #669ec0;
+}
+
+.hotel_button_details:active{
+  background-color: #5496bd;
+  color: #94b9d2;
+}
+
+.hotel_button_reserve{
+  background-color: #766357;
+}
+
+.hotel_button_reserve:hover{
+  background-color: #604e43;
+}
+
+.hotel_button_reserve:active{
+  background-color: #503e33;
+  color: #827872;
+}
+
+.hotel_stars {
+  list-style: none;
+}
+
+.hotel_rating {
+  background-color: #f2f2f2;
+}
+
+.main_footer_hashtag {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+}
+
+.main_footer_copyright b {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 26px;
+}
+
+.main_footer_social {
+  text-align: center;
+}
+
+.main_footer_social ul {
+  list-style: none;
+}
+
+.social_button {
+  color: #000000;
+}
