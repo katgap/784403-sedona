@@ -17,13 +17,16 @@ a {
   text-decoration: none;
 }
 
-.main_header {
+.container {
   width: 1200px;
-  min-height: 57px;
-
   margin: 0 auto;
+  padding: 0 40px;
+}
 
-  border: 1px solid black;
+.main_header {
+  /*min-height: 57px;*/
+
+  outline: 1px solid black;
 }
 
 .main_header_navigation {
@@ -41,17 +44,26 @@ a {
 
   display: flex;
 
-  border: 1px solid black;
+  outline: 1px solid black;
 }
 
 .main_header_site_navigation a {
   color: #000000;
-  display: block;
-  width: 98px;
-  border: 1px solid black;
+
+  outline: 1px solid black;
 }
 
-.main_header_site_navigation li:nth-child(1) {
+.main_header_site_navigation li {
+  width: 20%;
+
+  outline: 1px solid black;
+}
+
+.main_header_site_navigation li:nth-child(2) {
+  margin-right: 20%;
+}
+
+/*.main_header_site_navigation li:nth-child(1) {
   margin-right: 142px;
 }
 
@@ -61,7 +73,7 @@ a {
 
 .main_header_site_navigation li:nth-child(4) {
   margin-left: auto;
-}
+}*/
 
 .main_header_site_navigation .disabled {
   pointer-events: none;
@@ -75,11 +87,6 @@ a {
 
 .main_header_site_navigation a:active {
   color: #dadada;
-}
-
-.container {
-  width: 1200px;
-  margin: 0 auto;
 }
 
 .main_intro {
@@ -98,15 +105,21 @@ a {
 
   padding-top: 76px;
   padding-bottom: 79px;
-  margin-bottom: 65px;
+
+  outline: 1px solid black;
+
+  /*margin-bottom: 63px;*/
 }
 
 .main_intro_text {
   background-color: #ffffff;
 
-  margin-bottom: 55px;
+  padding-top: 63px;
+  padding-bottom: 55px;
 
-  border: 1px solid black;
+  /*margin-bottom: 55px;*/
+
+  outline: 1px solid black;
 }
 
 .main_intro_title {
@@ -115,32 +128,38 @@ a {
 
   margin-bottom: 30px;
 
-  border: 1px solid black;
+  outline: 1px solid black;
 }
 
 .main_intro_promo {
-  border: 1px solid black;
+  outline: 1px solid black;
 }
+
+/*_*/
 
 .reasons_main {
   background-color: #81b3d2;
 
-  margin-bottom: 50px;
+  /*margin-bottom: 50px;*/
+
   display: flex;
   flex-direction: row-reverse;
 }
 
 .reasons_main_bridge {
   flex-direction: row;
-  margin-bottom: 0;
+  /*margin-bottom: 0;*/
 }
 
 .reasons_other {
   background-color: #eeeeee;
 
   padding-top: 50px;
-  padding-bottom: 44px;
-  margin-bottom: 55px;
+  padding-bottom: 40px;
+
+  /*margin-bottom: 55px;*/
+
+  outline: 1px solid black;
 }
 
 .reasons_list {
@@ -148,11 +167,12 @@ a {
   margin: 0;
   list-style: none;
 
-  border: 1px solid black;
+  outline: 1px solid black;
 }
 
 .reasons_main_list {
-  padding: 50px 46px 40px 46px;
+  padding-top: 49px;
+  padding-bottom: 41px;
 }
 
 .reasons_other_list {
@@ -166,11 +186,11 @@ a {
 }
 
 .reasons_photo {
-  border: 1px solid black;
+  outline: 1px solid black;
 }
 
 .reasons_item {
-  border: 1px solid black;
+  outline: 1px solid black;
 }
 
 .reasons_item h3,
@@ -181,19 +201,30 @@ a {
 
 .reasons_item_white {
   color: #ffffff;
+
+  padding-right: 48px;
+  padding-left: 48px;
+
+  outline: 1px solid black;
 }
 
 .reasons_item_black {
   color: #000000;
 
-  width: 218px;
+  padding-right: 66px;
+  padding-left: 66px;
+
+  outline: 1px solid black;
 }
 
-.recommendations {
-  padding: 0 47px;
-  margin-bottom: 70px; /*не знаю, как отмерить в макете*/
+/*_*/
 
-  border: 1px solid black;
+.recommendations {
+  padding-top: 60px;
+  padding-bottom: 80px;
+  /*не знаю, как отмерить в макете*/
+
+  outline: 1px solid black;
 }
 
 .recommendations_list {
@@ -204,20 +235,29 @@ a {
   display: flex;
   justify-content: space-between;
 
-  border: 1px solid black;
+  outline: 1px solid black;
 }
 
 .recommendations_item {
-  width: 304px;
+  padding-right: 47px;
+  padding-left: 47px;
 
-  border: 1px solid black;
+  outline: 1px solid black;
+}
+
+/*_*/
+
+.reservation {
+  padding-top: 55px;
+
+  outline: 1px solid black;
 }
 
 .reservation_container {
   width: 576px;
   margin: 0 auto;
 
-  border: 1px solid black;
+  outline: 1px solid black;
 }
 
 .reservation_title {
@@ -228,7 +268,7 @@ a {
 
   margin-bottom: 30px;
 
-  border: 1px solid black;
+  outline: 1px solid black;
 }
 
 .reservation_info {
@@ -237,7 +277,7 @@ a {
 
   margin-bottom: 50px;
 
-  border: 1px solid black;
+  outline: 1px solid black;
 }
 
 .reservation_button {
@@ -331,11 +371,6 @@ a {
 
 /*__________*/
 
-.container_inner {
-  width: 1056px;
-  margin: 0 auto;
-}
-
 .hotel_search {
   color: #ffffff;
   background-color: #81b3d3;
@@ -343,9 +378,9 @@ a {
   background-position: top center;
   background-repeat: no-repeat;
 
-  padding: 32px 0;
+  padding: 32px 72px;
 
-  border: 1px solid black;
+  outline: 1px solid black;
  }
 
  .hotel_search h3 {
@@ -361,20 +396,20 @@ a {
    width: 180px;
    margin-right: 74px;
 
-   border: 1px solid black;
+   outline: 1px solid black;
 }
 
 .hotel_search_housing {
   width: 180px;
 
-  border: 1px solid black;
+  outline: 1px solid black;
 }
 
  .hotel_search_prise {
    width: 318px;
    margin-left: auto;
 
-   border: 1px solid black;
+   outline: 1px solid black;
  }
 
  .hotel_search_infrastructure ul,
@@ -405,13 +440,18 @@ a {
    background-color: #ffffff;
  }
 
+ /*_*/
+
  .sorting {
    font-size: 12px;
    line-height: 18px;
 
-   padding: 30px 0 35px;
+   padding-top: 30px;
+   padding-right: 72px;
+   padding-bottom: 35px;
+   padding-left: 72px; /*71*/
 
-   border: 1px solid black;
+   outline: 1px solid black;
  }
 
  .sorting_position {
@@ -422,19 +462,20 @@ a {
   /*width: 117px;*/
   margin-right: 48px;
 
-  border: 1px solid black;
+  outline: 1px solid black;
  }
 
  .sorting_options {
    /*display: flex;*/
    width: 354px;
-   border: 1px solid black;
+
+   outline: 1px solid black;
  }
 
  .sorting_order {
    margin-left: auto;
 
-   border: 1px solid black;
+   outline: 1px solid black;
  }
 
  .sorting span {
@@ -481,10 +522,12 @@ a {
   border-bottom: none;
 }
 
-.hotel {
-  padding: 30px 0;
+/*_*/
 
-  border: 1px solid black;
+.hotel {
+  padding: 30px 72px;
+
+  outline: 1px solid black;
 }
 
 .hotel_amara,
@@ -492,24 +535,26 @@ a {
 .hotel_villas {
   display: flex;
 
-  border: 1px solid black;
+  outline: 1px solid black;
 }
 
 .hotel_photo {
   margin-right: 30px;
+
+  outline: 1px solid black;
 }
 
 .hotel_about {
   width: 258px;
 
-  border: 1px solid black;
+  outline: 1px solid black;
 }
 
 .hotel_about_stars {
   width: 111px;
   margin-left: auto;
 
-  border: 1px solid black;
+  outline: 1px solid black;
 }
 
 .hotel_title {
@@ -565,17 +610,22 @@ a {
   background-color: #f2f2f2;
 }
 
-/*____________*/
+/*__________*/
 
 .main_footer {
-  width: 1200px;
-  margin: 0 auto;
   padding: 36px 0px;
 
   display: flex;
   justify-content: space-around;
 
-  border: 1px solid black;
+  outline: 1px solid black;
+}
+
+.main_footer_column {
+  width: 400px;
+  text-align: center;
+
+  outline: 1px solid black;
 }
 
 .main_footer_hashtag {
@@ -583,12 +633,12 @@ a {
   font-weight: bold;
   line-height: 26px;
 
-  border: 1px solid black;
+  outline: 1px solid black;
 }
 
-.main_footer_copyright {
-  border: 1px solid black;
-}
+/*.main_footer_copyright {
+  outline: 1px solid black;
+}*/
 
 .main_footer_copyright b {
   font-size: 14px;
@@ -597,15 +647,14 @@ a {
 }
 
 .main_footer ul {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
-.main_footer_social {
-  width: 152px;
-  text-align: center;
-
-  border: 1px solid black;
-}
+/*.main_footer_social {
+  outline: 1px solid black;
+}*/
 
 .social_button {
   color: #000000;
