@@ -33,16 +33,16 @@
               <div class="hotel_search_position">
                 <div class="hotel_search_infrastructure">
                   <h3>Инфраструктура:</h3>
-                  <ul>
-                    <li class="hotel_search_checkbox_on">
+                  <ul class="hotel_search_checkbox">
+                    <li>
                       <input type="checkbox" class="visually_hidden" name="pool" id="pool-checkbox" checked>
                       <label for="pool-checkbox">Бассейн</label>
                     </li>
-                    <li class="hotel_search_checkbox_off">
+                    <li>
                       <input type="checkbox" class="visually_hidden" name="parking" id="parking-checkbox">
                       <label for="parking-checkbox">Парковка</label>
                     </li>
-                    <li class="hotel_search_checkbox_off">
+                    <li>
                       <input type="checkbox" class="visually_hidden" name="wifi" id="wifi-checkbox">
                       <label for="wifi-checkbox">WI-FI</label>
                     </li>
@@ -50,18 +50,18 @@
                 </div>
                 <div class="hotel_search_housing">
                   <h3>Тип жилья:</h3>
-                  <ul>
-                    <li class="hotel_search_checkbox_on">
+                  <ul class="hotel_search_checkbox">
+                    <li>
                       <input type="checkbox" class="visually_hidden" name="hotel" id="hotel-checkbox" checked>
-                      <label for ="hotel-checkbox">Гостиница</label>
+                      <label for="hotel-checkbox">Гостиница</label>
                     </li>
-                    <li class="hotel_search_checkbox_on">
+                    <li>
                       <input type="checkbox" class="visually_hidden" name="parking" id="motel-checkbox" checked>
-                      <label for ="motel-checkbox">Мотель</label>
+                      <label for="motel-checkbox">Мотель</label>
                     </li>
-                    <li class="hotel_search_checkbox_on">
+                    <li>
                       <input type="checkbox" class="visually_hidden" name="apartment" id="apartment-checkbox" checked>
-                      <label for ="apartment-checkbox">Апартаменты</label>
+                      <label for="apartment-checkbox">Апартаменты</label>
                     </li>
                   </ul>
                 </div>
@@ -104,13 +104,17 @@
             </div>
             <div class="sorting_order">
               <ul class="sorting_button">
-                <li><a class="sorting_button_up" href="#">
+                <li><a class="sorting_button_item" href="#">
                   <span class="visually_hidden">Отсортировать по возрастанию</span>
-                  <img src="img/icon-up-dir.svg" width="11" height="10" alt="По возрастанию">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                    <path fill="#231F20" d="M5.5 0L0 10h11z"/></svg>
+                  <!--<img src="img/icon-up-dir.svg" width="11" height="10" alt="По возрастанию">-->
                 </a></li>
-                <li><a class="sorting_button_down" href="#">
+                <li><a class="sorting_button_item active" href="#">
                   <span class="visually_hidden">Отсортировать по убыванию</span>
-                  <img src="img/icon-down-dir.svg" width="11" height="10" alt="По убыванию">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                    <path fill="#231F20" d="M5.5 10L0 0h11"/></svg>
+                  <!--<img src="img/icon-down-dir.svg" width="11" height="10" alt="По убыванию">-->
                 </a></li>
               </ul>
             </div>
