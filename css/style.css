@@ -816,7 +816,7 @@ img {
 
 .hotel_search_price_range .scale {
     height: 2px;
-    background: rgb(255,255,255,.3)
+    background: rgba(255,255,255,.3)
 }
 
 .hotel_search_price_range .bar {

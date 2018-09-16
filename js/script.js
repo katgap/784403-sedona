@@ -5,6 +5,8 @@ var departureDate = form.querySelector("[name=departure-date]");
 var adultsAmount = form.querySelector("[name=amount-adults]");
 var childrenAmount = form.querySelector("[name=amount-children]");
 
+form.classList.remove("reservation_form_show");
+
 link.addEventListener("click", function (evt) {
     evt.preventDefault();
     form.classList.toggle("reservation_form_show");
