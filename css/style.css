@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: "PT Sans",Arial,sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 14px;
     line-height: 21px;
     color: #000;
@@ -14,12 +14,8 @@ a {
     text-decoration: none
 }
 
-img {
-    max-width: 100%;
-    height: auto
-}
-
-.visually_hidden:not(:focus):not(:hover),input[type=checkbox].visually_hidden {
+.visually_hidden:not(:focus):not(:hover),
+input[type=checkbox].visually_hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -39,6 +35,11 @@ img {
     background-color: #fff;
     -webkit-box-shadow: 0 0 10px 5px #dedede;
     box-shadow: 0 0 10px 5px #dedede
+}
+
+.img_container {
+    max-width: 100%;
+    height: auto
 }
 
 .main_header_navigation {
@@ -85,7 +86,8 @@ img {
     margin-right: 96px
 }
 
-.main_header_site_navigation li:nth-child(3),.main_header_site_navigation li:nth-child(4) {
+.main_header_site_navigation li:nth-child(3),
+.main_header_site_navigation li:nth-child(4) {
     text-align: right
 }
 
@@ -114,10 +116,10 @@ img {
     padding-top: 76px;
     padding-bottom: 72px;
     background-color: #fff;
-    background-image: url(../img/intro-mask.svg),url(../img/background-photo.jpg);
-    background-position: 100% 100%,100% 21%;
-    background-repeat: no-repeat,no-repeat;
-    background-size: 100% 57px,100%
+    background-image: url(../img/intro-mask.svg), url(../img/background-photo.jpg);
+    background-position: 100% 100%, 100% 21%;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 100% 57px, 100%
 }
 
 .main_intro_text {
@@ -181,7 +183,8 @@ img {
     justify-content: space-around
 }
 
-.reasons_item,.recommendations_item {
+.reasons_item,
+.recommendations_item {
     text-align: center
 }
 
@@ -210,7 +213,8 @@ img {
     padding-left: 70px
 }
 
-.reasons_item h3,.recommendations_list h3 {
+.reasons_item h3,
+.recommendations_list h3 {
     width: 151px;
     margin-right: auto;
     margin-left: auto;
@@ -353,17 +357,14 @@ img {
         -webkit-transform: translateY(0);
         transform: translateY(0)
     }
-
     40% {
         -webkit-transform: translateY(10px);
         transform: translateY(10px)
     }
-
     70% {
         -webkit-transform: translateY(-15px);
         transform: translateY(-15px)
     }
-
     to {
         -webkit-transform: translateY(0);
         transform: translateY(0)
@@ -375,17 +376,14 @@ img {
         -webkit-transform: translateY(0);
         transform: translateY(0)
     }
-
     40% {
         -webkit-transform: translateY(10px);
         transform: translateY(10px)
     }
-
     70% {
         -webkit-transform: translateY(-15px);
         transform: translateY(-15px)
     }
-
     to {
         -webkit-transform: translateY(0);
         transform: translateY(0)
@@ -393,34 +391,46 @@ img {
 }
 
 @-webkit-keyframes shake {
-    0%,to {
+    0%,
+    to {
         -webkit-transform: translateX(0);
         transform: translateX(0)
     }
-
-    10%,30%,50%,70%,90% {
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
         -webkit-transform: translateX(-5px);
         transform: translateX(-5px)
     }
-
-    20%,40%,60%,80% {
+    20%,
+    40%,
+    60%,
+    80% {
         -webkit-transform: translateX(5px);
         transform: translateX(5px)
     }
 }
 
 @keyframes shake {
-    0%,to {
+    0%,
+    to {
         -webkit-transform: translateX(0);
         transform: translateX(0)
     }
-
-    10%,30%,50%,70%,90% {
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
         -webkit-transform: translateX(-5px);
         transform: translateX(-5px)
     }
-
-    20%,40%,60%,80% {
+    20%,
+    40%,
+    60%,
+    80% {
         -webkit-transform: translateX(5px);
         transform: translateX(5px)
     }
@@ -532,7 +542,8 @@ img {
     width: auto
 }
 
-.reservation_form label,.reservation_form input {
+.reservation_form label,
+.reservation_form input {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     font-size: 14px;
@@ -623,15 +634,18 @@ img {
     outline: 0
 }
 
-.reservation_form_amount_less:hover span,.reservation_form_amount_more:hover span {
+.reservation_form_amount_less:hover span,
+.reservation_form_amount_more:hover span {
     background: #000
 }
 
-.reservation_form_amount_less:active,.reservation_form_amount_more:active {
+.reservation_form_amount_less:active,
+.reservation_form_amount_more:active {
     outline: 0
 }
 
-.reservation_form_amount_less:active span,.reservation_form_amount_more:active span {
+.reservation_form_amount_less:active span,
+.reservation_form_amount_more:active span {
     background: #81b3d2
 }
 
@@ -677,7 +691,8 @@ img {
     margin-right: 74px
 }
 
-.hotel_search_infrastructure ul,.hotel_search_housing ul {
+.hotel_search_infrastructure ul,
+.hotel_search_housing ul {
     padding: 0;
     margin: 0;
     list-style: none
@@ -687,7 +702,8 @@ img {
     margin-bottom: 25px
 }
 
-.hotel_search_infrastructure li:last-child,.hotel_search_housing li:last-child {
+.hotel_search_infrastructure li:last-child,
+.hotel_search_housing li:last-child {
     margin-bottom: 0
 }
 
@@ -718,6 +734,12 @@ img {
     background-image: url(../img/checkbox-on.svg);
     background-repeat: no-repeat;
     cursor: pointer
+}
+
+.hotel_search_checkbox input[type=checkbox]:focus+label::before {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
 }
 
 .hotel_search_checkbox input[type=checkbox]:disabled+label::before {
@@ -775,9 +797,9 @@ img {
     position: absolute;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     width: 2px;
     height: 22px;
     background: #fff
@@ -790,7 +812,8 @@ img {
     cursor: pointer
 }
 
-.hotel_search_price_min,.hotel_search_price_max {
+.hotel_search_price_min,
+.hotel_search_price_max {
     width: 90px;
     padding: 5px 0;
     padding-left: 65px
@@ -816,7 +839,7 @@ img {
 
 .hotel_search_price_range .scale {
     height: 2px;
-    background: rgba(255,255,255,.3)
+    background: rgba(255, 255, 255, .3)
 }
 
 .hotel_search_price_range .bar {
@@ -828,14 +851,13 @@ img {
 .range_toggle {
     position: absolute;
     top: -9px;
-    width: 4px;
-    height: 4px;
+    padding: 2px 2px;
     background: #ababab;
     border: 8px solid #fff;
     border-radius: 50%;
-    -webkit-box-shadow: 0 2px 1px 0 rgba(0,1,1,.2);
-    box-shadow: 0 2px 1px 0 rgba(0,1,1,.2);
-    cursor: pointer
+    -webkit-box-shadow: 0 2px 1px 0 rgba(0, 1, 1, .2);
+    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, .2);
+    cursor: pointer;
 }
 
 .range_toggle:hover {
@@ -948,7 +970,9 @@ img {
     fill: #81b3d2
 }
 
-.sorting_button_item.active path,.sorting_button_item.active:hover path,.sorting_button_item.active:active path {
+.sorting_button_item.active path,
+.sorting_button_item.active:hover path,
+.sorting_button_item.active:active path {
     fill: #81b3d2
 }
 
@@ -981,7 +1005,7 @@ img {
 }
 
 .sorting_list a {
-    color: rgba(0,0,0,.3);
+    color: rgba(0, 0, 0, .3);
     border-bottom: 1px dotted #81b3d2
 }
 
@@ -994,7 +1018,9 @@ img {
     border-bottom: none
 }
 
-.sorting_list a.active,.sorting_list a.active:hover,.sorting_list a.active:active {
+.sorting_list a.active,
+.sorting_list a.active:hover,
+.sorting_list a.active:active {
     color: #81b3d2;
     border-bottom: none
 }
@@ -1008,7 +1034,9 @@ img {
     border-bottom: 1px solid #e5e5e5
 }
 
-.hotel_amara,.hotel_desert,.hotel_villas {
+.hotel_amara,
+.hotel_desert,
+.hotel_villas {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1067,7 +1095,8 @@ img {
     width: 110px
 }
 
-.hotel_about_options p:nth-child(2n),.hotel_about_options a:nth-child(2n) {
+.hotel_about_options p:nth-child(2n),
+.hotel_about_options a:nth-child(2n) {
     width: 143px
 }
 
@@ -1076,7 +1105,8 @@ img {
     margin-left: auto
 }
 
-.hotel_button_details,.hotel_button_reserve {
+.hotel_button_details,
+.hotel_button_reserve {
     font-weight: 700
 }
 
@@ -1149,7 +1179,7 @@ img {
     position: relative;
     z-index: 2;
     margin-top: -120px;
-    background-color: rgba(255,255,255,.9);
+    background-color: rgba(255, 255, 255, .9);
     opacity: .9
 }
 
